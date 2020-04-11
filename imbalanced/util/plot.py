@@ -204,7 +204,7 @@ class Plot:
                 [0, '#ff9900'],
                 [1, '#6666ff']
             ],
-            opacity=0.2,
+            opacity=0.4,
             showscale=False
         )
         

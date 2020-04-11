@@ -1,6 +1,7 @@
 flake8==3.7.9
 jupyter==1.0.0
 numpy==1.18.2
+pandas==1.0.3
 plotly==4.6.0
 scikit-learn==0.22.2.post1
 scipy==1.4.1
