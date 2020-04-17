@@ -13,3 +13,11 @@ pip install -r requirements.txt
 ```
 
 ## Scripts
+
+Those include separated examples from slides.
+Please feel free to have fun with them.
+
+1. Resampling
+2. SVM Cost-Sensitive
+3. Cart Cost-Sensitive
+4. Ecoli
