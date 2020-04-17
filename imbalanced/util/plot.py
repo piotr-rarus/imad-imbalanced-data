@@ -6,6 +6,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.io as pio
+import plotly.offline as pyo
 from sklearn.base import BaseEstimator
 from sklearn.decomposition import PCA
 
@@ -22,6 +23,7 @@ class Plot:
         self.IMAGE_HEIGHT = image_height
 
         pio.renderers.default = 'notebook'
+        pyo.init_notebook_mode(connected=False)
 
 
     def class_balance(self, class_balance: Dict[str, int]):
@@ -52,7 +54,7 @@ class Plot:
 
         fig.update_layout(title='Class balance')
 
-        fig.show()
+        pyo.iplot(fig)
 
     # TODO 3d scatter plot
     def features_distribution(self, x: np.ndarray, y: np.ndarray):
@@ -84,7 +86,7 @@ class Plot:
             legend_title='Label'
         )
 
-        fig.show()
+        pyo.iplot(fig)
 
     def heatmap(
         self,
@@ -108,7 +110,7 @@ class Plot:
             title=plot_name
         )
 
-        fig.show()
+        pyo.iplot(fig)
 
     def scores(self, scores: Dict[str, List[float]]):
         """
@@ -155,7 +157,7 @@ class Plot:
                 )
             )
 
-        fig.show()
+        pyo.iplot(fig)
 
     def distribution(self, data: List[float], name: str=''):
         fig = px.histogram(
@@ -167,7 +169,7 @@ class Plot:
             title=name,
         )
 
-        fig.show()
+        pyo.iplot(fig)
 
     def decision_boundary(
         self,
@@ -216,4 +218,4 @@ class Plot:
             legend_title='Label'
         )
 
-        fig.show()
+        pyo.iplot(fig)
