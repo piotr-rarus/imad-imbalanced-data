@@ -51,6 +51,7 @@ class Plot:
         fig.add_trace(bars)
 
         fig.update_layout(title='Class balance')
+
         fig.show()
 
     # TODO 3d scatter plot
