@@ -12,9 +12,11 @@
 pip install -r requirements.txt
 ```
 
-## Scripts
+## Notebooks
 
-Those include separated examples from slides.
+`slides.ipynb` - master notebook with slides
+
+There are also separated examples from slides.
 Please feel free to have fun with them.
 
 1. Resampling
