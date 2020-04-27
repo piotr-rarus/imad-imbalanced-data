@@ -1,0 +1,10 @@
+coltrane==0.1.1
+flake8==3.7.9
+imbalanced-learn==0.6.2
+jupyter==1.0.0
+jupyter-contrib-nbextensions==0.5.1
+numpy==1.18.2
+pandas==1.0.3
+plotly==4.6.0
+scikit-learn==0.22.2.post1
+scipy==1.4.1
